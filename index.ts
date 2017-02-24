@@ -4,11 +4,13 @@ import {SampleComponent} from './src/sample.component';
 import {SampleDirective} from './src/sample.directive';
 import {SamplePipe} from './src/sample.pipe';
 import {SampleService} from './src/sample.service';
+import {LoginComponent} from './src/components/login/login'
 
 export * from './src/sample.component';
 export * from './src/sample.directive';
 export * from './src/sample.pipe';
 export * from './src/sample.service';
+export * from './src/components/login/login';
 
 @NgModule({
   imports: [
@@ -17,12 +19,14 @@ export * from './src/sample.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    LoginComponent
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    LoginComponent
   ]
 })
 export class SampleModule {

@@ -1,0 +1,8 @@
+<div>
+  <h2>Login</h2>
+  <form>
+    <input type="text" placeholder="username"  name="username" #username>
+    <input type="password" placeholder="password"  #password name="password" > 
+    <button (click)="login(username.value,password.value)" >Login </button>
+  </form>
+</div>
